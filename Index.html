@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | Rotter</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Screenshot 2025-02-23 191004.png" type="image/png">
 </head>
 <body>
     <h1>CALCULATOR</h1>
-    <div class="box">
-        <p>151951</p>
-    </div>
     <div class="container">
+        <input id="num">
         <div class="box1">
-            <button id="" class="btn">1</button>
-            <button id="" class="btn">2</button>
-            <button id="" class="btn">3</button>
-            <button id="" class="btn">4</button>
-            <button id="" class="btn">5</button>
-            <button id="" class="btn">6</button>
-            <button id="" class="btn">7</button>
-            <button id="" class="btn">8</button>
-            <button id="" class="btn">9</button>
-            <button id="" class="btn">0</button>
-            <button id="eq" class="Ebtn">=</button>
+            <button id="1" class="btn" onclick="appendToDisplay('1')">1</button>
+            <button id="2" class="btn" onclick="appendToDisplay('2')">2</button>
+            <button id="3" class="btn" onclick="appendToDisplay('3')">3</button>
+            <button id="4" class="btn" onclick="appendToDisplay('4')">4</button>
+            <button id="5" class="btn" onclick="appendToDisplay('5')">5</button>
+            <button id="6" class="btn" onclick="appendToDisplay('6')">6</button>
+            <button id="7" class="btn" onclick="appendToDisplay('7')">7</button>
+            <button id="8" class="btn" onclick="appendToDisplay('8')">8</button>
+            <button id="9" class="btn" onclick="appendToDisplay('9')">9</button>
+            <button id="dot" class="btn" onclick="appendToDisplay('0')">0</button>
+            <button id="open-bracket" class="Pbtn" onclick="appendToDisplay('(')">(</button>
+            <button id="close-bracket" class="P2btn" onclick="appendToDisplay(')')">)</button>
+            <button id="sqrt" class="btn" onclick="appendToDisplay('√')">√</button>
+            <button id="dot" class="btn" onclick="appendToDisplay('.')">.</button>
+            <button id="eq" class="btn" onclick="clearDisplay()">C</button>
         </div>
         <div class="box2">
-            <button id="div" class="btn">/</button>
-            <button id="mul" class="btn">*</button>
-            <button id="min" class="btn">-</button>
-            <button id="pl" class="btn">+</button>
+            <button id="div" class="Ebtn" onclick="appendToDisplay('/')">/</button>
+            <button id="mul" class="Ebtn" onclick="appendToDisplay('*')">*</button>
+            <button id="min" class="Ebtn" onclick="appendToDisplay('-')">-</button>
+            <button id="add" class="Ebtn" onclick="appendToDisplay('+')">+</button>
+            <button id="clear" class="Ebtn" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="Script.js"></script>
